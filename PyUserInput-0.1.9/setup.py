@@ -2,7 +2,7 @@ from distutils.core import setup
 import sys
 
 def long_description():
-    with open('Downloads/setup/config_files/PyUserInput-0.1.9/README.md', 'r') as readme:
+    with open('README.md', 'r') as readme:
         readme_text = readme.read()
     return(readme_text)
 
