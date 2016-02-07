@@ -1,0 +1,26 @@
+( if
+( contains ( window_class ) "Parole" )
+( begin
+( spawn_async (str "transset -i " (window_xid) " 0.9" )))
+
+( if
+( contains ( window_class ) "Thunar" )
+( begin
+( spawn_async (str "transset -i " (window_xid) " 0.85" )))
+
+( if
+( contains ( window_class ) "Xfrun4" )
+( begin
+( spawn_async (str "transset -i " (window_xid) " 0.7" )))
+
+( if
+( contains ( window_class ) "Sublime" )
+( begin
+( spawn_async (str "transset -i " (window_xid) " 0.96" )))
+
+( if
+( contains ( window_class ) "Gmusicbrowser" )
+( begin
+( spawn_async (str "transset -i " (window_xid) " 0.87" )))
+
+)))))
